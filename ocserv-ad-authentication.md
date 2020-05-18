@@ -69,3 +69,7 @@ fallback_homedir = /home/yourdomain/%u
 access_provider = ad
 ```
 
+## filter access to a specific AD group
+## add the following under access_providerr
+
+ad_access_filter = (memberOf=cn=AD_GROUP,cn=users,dc=DOMAIN,dc=com)
